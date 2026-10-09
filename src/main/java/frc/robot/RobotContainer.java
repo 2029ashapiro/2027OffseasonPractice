@@ -32,7 +32,6 @@ import frc.robot.subsystems.intake.IntakeIOSim;
 import frc.robot.subsystems.kicker.Kicker;
 import frc.robot.subsystems.kicker.KickerIO;
 import frc.robot.subsystems.kicker.KickerIOReal;
-import frc.robot.subsystems.kicker.KickerIOSim;
 import frc.robot.subsystems.spindexer.Spindexer;
 import frc.robot.subsystems.spindexer.SpindexerIO;
 import frc.robot.subsystems.spindexer.SpindexerIOReal;
@@ -88,7 +87,7 @@ public class RobotContainer {
                 new ModuleIOSim(TunerConstants.BackLeft),
                 new ModuleIOSim(TunerConstants.BackRight));
         spindexer = new Spindexer(new SpindexerIOSim());
-        kicker = new Kicker(new KickerIOSim());
+        kicker = new Kicker(new KickerIOReal());
         intake = new Intake(new IntakeIOSim());
         break;
 
